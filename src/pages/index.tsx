@@ -1,10 +1,12 @@
-import { Button } from "@/components/ui/button";
+import DisplayAstroCards from "@/components/AsteroidData/DisplayAstroCards";
+import Home from "@/components/Home";
 
 const index = () => {
   return (
     <>
-      <div className="grid place-items-center h-screen">
-        <Button>Start</Button>
+      <div className="grid place-items-center gap-16">
+        <Home />
+        <DisplayAstroCards />
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Ojuju } from "next/font/google";
+import Navbar from "./Navbar";
 
 const ojuju = Ojuju({
   subsets: ["latin"],
@@ -8,9 +9,10 @@ const ojuju = Ojuju({
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <>
-      <main className={ojuju.className}>{children}</main>
-    </>
+    <div className={`space-y-16 ${ojuju.className}`}>
+      <Navbar />
+      <main className="max-w-screen-xl mx-auto">{children}</main>
+    </div>
   );
 };
 
