@@ -36,7 +36,7 @@ const DisplayAstroCards = () => {
 
   if (isFetched && isSuccess) {
     return (
-      <div className="space-y-4">
+      <div className="space-y-4 w-full p-3">
         {Object.keys(data.near_earth_objects).map((date) => (
           <div key={date}>
             <h2 className="text-xl font-semibold mb-4">{date}</h2>
